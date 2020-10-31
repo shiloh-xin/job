@@ -1,13 +1,133 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-color: #ccc;
+}
+
+.w {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 60px;
+    background-color: #444;
+}
+
+.header-w {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: #fff;
+}
+
+.add {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 600px;
+    height: 60px;
+    line-height: 58px;
+    text-align: right;
+}
+
+.add input {
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.title {
+    height: 80px;
+    line-height: 80px;
+}
+
+.title h1 {
+    float: left;
+}
+
+.title .count {
+    float: right;
+    line-height: 80px;
+}
+
+.title span {
+    height: 14px;
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 0 6px;
+}
+
+#todolist li {
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    border-left: 7px solid #388e8e;
+    margin: 10px 0;
+}
+
+#donelist li {
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    border-left: 7px solid #999;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#todolist input,
+#donelist input {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+#todolist p,
+#donelist p {
+    float: left;
+    margin-left: 15px;
+}
+
+#todolist a,
+#donelist a {
+    float: right;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #999;
+}
+
+footer {
+    text-align: center;
+    color: #999;
+    margin-top: 20px;
+}
+
+.del {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    background: #ccc;
+    flex-grow: 0;
+    margin-top: 10px;
 }
